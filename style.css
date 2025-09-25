@@ -3,6 +3,20 @@
 } */
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    
+    /* font-family: Helvetica, Arial, sans-serif; */
+    font-family: "Bitcount Grid Double Ink", system-ui;
+    padding: 3rem;
+    color: rgb(51, 51, 51);
 }
+
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(58, 15, 98);
+    font-size: 3rem;
+}
+
+/* To add external font, copy-paste the embed code on google fonts, for example */
+
+/* you can "add import" to avoid link tag in html file */
+
+*:not(:first-child){margin-block-start: 1em;}
