@@ -1,19 +1,44 @@
-/* html {
-    color: rgb(187, 0, 128);
-} */
+/*importing Google fonts below - assessed from embed code section*/
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bitcount+Grid+Double+Ink:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+/*I try not to repeat padding below, but when I insert it in body, it looks weird. So, I repeated here*/
+header { background-color: #220F21;  padding: 3rem; color: #F9F7F9;}
+main { padding: 3rem;}
+footer { background-color: #220F21;  padding: 3rem; color: #F9F7F9;}
+
+/*setting the default text style below*/
 body {
-    /* font-family: Helvetica, Arial, sans-serif; */
-    font-family: "Bitcount Grid Double Ink", system-ui;
-    padding: 3rem;
-    color: rgb(51, 51, 51);
+    font-family: "Be Vietnam Pro"; font-size: 18px; font-style: normal; font-weight: 400; letter-spacing: -0.36px; line-height: 150% ; color: #2F2F2F; background:#F9F7F9;
 }
 
+/*setting each header and paragraph style text below*/
 h1{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: rgb(58, 15, 98);
-    font-size: 3rem;
+    font-family: "Playfair Display"; font-size: 70px; font-weight: 500; color: #F9F7F9; padding-top: 6rem; line-height: normal; color: #D47CDC
 }
+
+h2{
+    font-family: "Playfair Display"; font-size: 30px; background-color: #eee2ec; line-height: normal; font-style: normal; font-weight: 600;
+}
+
+h3{
+    font-family: "Playfair Display"; font-size: 30px; line-height: normal; font-style: normal; font-weight: 600;
+}
+
+h4{
+    font-family: "Be Vietnam Pro"; font-size: 16px; color: #D47CDC; text-transform: uppercase; font-style: normal; font-weight: 300;
+}
+
+p{
+    font-family: "Be Vietnam Pro"; font-size: 18px; font-style: normal; font-weight: 400; letter-spacing: -0.36px; line-height: 150% ; 
+    color: #2F2F2F; width: 730px;
+}
+
+blockquote{width: 640px}
+span{font-weight: 600; color: #9A1B93;}
+
+.all_caps{font-weight:600; text-transform: uppercase;}
+.hline { width:100%; height:1px; background: #2F2F2F, max-width: 1440px }
 
 /* To add external font, copy-paste the embed code on google fonts, for example */
 
