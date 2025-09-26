@@ -26,7 +26,7 @@ h3{
 }
 
 h4{
-    font-family: "Be Vietnam Pro"; font-size: 16px; color: #D47CDC; text-transform: uppercase; font-style: normal; font-weight: 300;
+    font-family: "Be Vietnam Pro"; font-size: 16px; color: #D47CDC; text-transform: uppercase; font-style: normal; font-weight: 300; text-align: start;
 }
 
 p{
@@ -34,14 +34,21 @@ p{
     color: #2F2F2F; width: 730px;
 }
 
+th, td {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+td {
+  vertical-align: top;
+}
+
 blockquote{width: 640px}
 span{font-weight: 600; color: #9A1B93;}
-
 .all_caps{font-weight:600; text-transform: uppercase;}
-.hline { width:100%; height:1px; background: #2F2F2F, max-width: 1440px }
-
-/* To add external font, copy-paste the embed code on google fonts, for example */
-
-/* you can "add import" to avoid link tag in html file */
+.author-link {color: #D47CDC; text-decoration: underline;
+}
+.author-link:hover {color: #F9F7F9; text-decoration: underline; 
+}
 
 *:not(:first-child){margin-block-start: 1em;}
