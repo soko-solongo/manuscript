@@ -1,15 +1,19 @@
 /*importing Google fonts below - assessed from embed code section*/
-@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bitcount+Grid+Double+Ink:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+/*make the header viewport*/
 header, footer {
-    background-color: #220F21;
+    background-color: #230430;
     padding: 3rem;
-    color:#F9F7F9;
+    color: #F5F0F5;
+    line-height: normal;
 }
+
 main{
     padding: 3rem;
+    align-items: center;
 }
 
 body{
@@ -19,35 +23,44 @@ body{
     letter-spacing: -0.02rem;
     line-height: 150%;
     color: #2F2F2F;
-    background: #F9F7F9
+    background: #F5F0F5;
+    text-align: justify;
 }
 
-h1, h2, h3 {
-    font-family: "Playfair Display";
-    line-height: normal;
-}
+/*Headings*/
 
 h1{
+    font-family: "Tourney";
     font-size: 4rem;
-    font-weight: 500;
-    color: #D47CDC;
-    padding-block-start: 6rem;
+    font-weight: 200;
+    padding-block-start: 9rem;
+    text-align: center;
 }
 
-h2, h3{
+h2, h3 {
+    font-family: "Aldrich";
+    line-height: normal;
     font-size: 2rem;
-    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -0.02rem;
 }
 
 h2{
-    background-color: #EEE2EC;
+    width: 50rem;
+    background-color: #F5F0F5;
+    color: #3C009D;
+    padding: 2rem;
+    text-align: center;
+    position: sticky;
+    border-radius: 0 3rem;
+    border: 1px solid #C871F3;
 }
 
 h4{
     font-family: "Be Vietnam Pro";
     font-size: 0.9rem;
     font-weight: 300;
-    color: #D47CDC;
+    color: #C871F3;
     text-transform: uppercase;
     text-align: start;
 }
@@ -67,7 +80,11 @@ blockquote{
 }
 span{
     font-weight: 600;
-    color: #9A1B93;
+    color: #3C009D;
+}
+
+.brand{
+    color:#C871F3;
 }
 
 /*Class*/
@@ -77,12 +94,54 @@ span{
 }
 
 .author-link{
-    color: #D47CDC;
+    color: #C871F3;
     text-decoration: underline;
 }
 
 .author-link:hover{
-    color: #F9F7F9
+    color: #F5F0F5;
 }
 
-*:not(:first-child){margin-block-start: 1em;}
+/* I wanna try something here, but can't figure out
+.type-animation{
+    position: relative;
+    display:inline-block;
+    font-size: 4rem; 
+}
+
+.type-animation span {
+    position: absolute;
+    inset-block-start: 6rem;
+    inset-inline-start: 0;
+    opacity: 0;
+    animation: fadeinout 8s infinite;
+}
+
+.brand{
+    color:#D47CDC;
+}
+
+.font1{
+    font-family: "Playfair Display";
+    animation-delay: 0s;
+}
+
+.font2{
+    font-family: "PoetsenOne";
+    animation-delay: 2s;
+}
+
+.font3{
+    font-family: "Rampart One";
+    animation-delay: 4s;
+}
+
+@keyframes fadeinout {
+    0%, 15% {opacity: 1;}
+    20%, 100% {opacity: 0;}
+}
+
+*/
+
+
+/**:not(:first-child){margin-block-start: 1em;}*/
