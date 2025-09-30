@@ -2,53 +2,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bitcount+Grid+Double+Ink:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-/*I try not to repeat padding below, but when I insert it in body, it looks weird. So, I repeated here*/
-header { background-color: #220F21;  padding: 3rem; color: #F9F7F9;}
-main { padding: 3rem;}
-footer { background-color: #220F21;  padding: 3rem; color: #F9F7F9;}
 
-/*setting the default text style below*/
-body {
-    font-family: "Be Vietnam Pro"; font-size: 18px; font-style: normal; font-weight: 400; letter-spacing: -0.36px; line-height: 150% ; color: #2F2F2F; background:#F9F7F9;
+header, footer {
+    background-color: #220F21;
+    padding: 3rem;
+    color:#F9F7F9;
+}
+main{
+    padding: 3rem;
 }
 
-/*setting each header and paragraph style text below*/
+body{
+    font-family: "Be Vietnam Pro";
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.02rem;
+    line-height: 150%;
+    color: #2F2F2F;
+    background: #F9F7F9
+}
+
+h1, h2, h3 {
+    font-family: "Playfair Display";
+    line-height: normal;
+}
+
 h1{
-    font-family: "Playfair Display"; font-size: 70px; font-weight: 500; color: #F9F7F9; padding-top: 6rem; line-height: normal; color: #D47CDC
+    font-size: 4rem;
+    font-weight: 500;
+    color: #D47CDC;
+    padding-block-start: 6rem;
+}
+
+h2, h3{
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 h2{
-    font-family: "Playfair Display"; font-size: 30px; background-color: #eee2ec; line-height: normal; font-style: normal; font-weight: 600;
-}
-
-h3{
-    font-family: "Playfair Display"; font-size: 30px; line-height: normal; font-style: normal; font-weight: 600;
+    background-color: #EEE2EC;
 }
 
 h4{
-    font-family: "Be Vietnam Pro"; font-size: 16px; color: #D47CDC; text-transform: uppercase; font-style: normal; font-weight: 300; text-align: start;
+    font-family: "Be Vietnam Pro";
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #D47CDC;
+    text-transform: uppercase;
+    text-align: start;
 }
 
 p{
-    font-family: "Be Vietnam Pro"; font-size: 18px; font-style: normal; font-weight: 400; letter-spacing: -0.36px; line-height: 150% ; 
-    color: #2F2F2F; width: 730px;
+    font-size: 1rem;
+    width: 40rem;
 }
 
-th, td {
-  padding-left: 10px;
-  padding-right: 10px;
+/*Table*/
+td{
+    vertical-align: top;
 }
 
-td {
-  vertical-align: top;
+blockquote{
+    width: 35rem;
+}
+span{
+    font-weight: 600;
+    color: #9A1B93;
 }
 
-blockquote{width: 640px}
-span{font-weight: 600; color: #9A1B93;}
-.all_caps{font-weight:600; text-transform: uppercase;}
-.author-link {color: #D47CDC; text-decoration: underline;
+/*Class*/
+.all_caps{
+    font-weight: 600;
+    text-transform: uppercase;
 }
-.author-link:hover {color: #F9F7F9; text-decoration: underline; 
+
+.author-link{
+    color: #D47CDC;
+    text-decoration: underline;
+}
+
+.author-link:hover{
+    color: #F9F7F9
 }
 
 *:not(:first-child){margin-block-start: 1em;}
