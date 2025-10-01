@@ -62,12 +62,13 @@ h2 {
     inline-size: 50rem;
     background-color: #F5F0F5;
     color: #3C009D;
-    padding: 2rem;
+    padding: 1.2rem;
     text-align: center;
     position: sticky;
-    z-index: 1;
+    top: 0;
     border-radius: 0 3rem;
     border: 0.05rem solid #C871F3;
+    margin-inline: auto;
 }
 
 
@@ -75,6 +76,7 @@ p{
     font-size: 1rem;
     inline-size: 40rem;
     padding-block-start: 2rem;
+    margin-inline: auto;
 }
 
 /*Table*/
@@ -130,6 +132,7 @@ blockquote{
     font-size: 1.2rem;
     color: #3C009D;
     font-weight: 500;
+     margin-inline: auto;
 }
 
 article{
