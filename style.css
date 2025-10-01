@@ -74,7 +74,7 @@ p{
 /*Table*/
 
 table{
-    width: 100%;
+    max-width: 80rem;
     border-spacing: 1rem 0;
     vertical-align: top;
 }
@@ -103,6 +103,7 @@ td{
 
 
 
+
 blockquote{
     width: 37.5rem;
     border-inline-start: 0.3rem solid #C871F3;
@@ -116,7 +117,6 @@ blockquote{
 
 article{
     padding-block-start: 6rem;
-    align-items: center;
 }
 
 .purple-text{
@@ -133,6 +133,12 @@ article{
 .author-link:hover{
     color: #F5F0F5;
 }
+
+/*
+.page-wrapper{
+    max-inline-size: 80rem;
+}
+*/
 
 /* I wanna try something here, but can't figure out
 .type-animation{
