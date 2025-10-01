@@ -4,6 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*make the header viewport*/
+
+:root {
+	font-size: 125%;
+}
+
 header, footer {
     background-color: #230430;
     padding: 3rem;
@@ -17,10 +22,9 @@ main{
 
 body{
     font-family: "Be Vietnam Pro";
-    font-size: 18px;
     font-weight: 400;
-    letter-spacing: -0.02rem;
-    line-height: 150%;
+    letter-spacing: -0.03rem;
+    line-height: 2rem;
     color: #2F2F2F;
     background: #F5F0F5;
     text-align: justify;
@@ -28,70 +32,84 @@ body{
 
 /*Headings*/
 
-h1{
+h1, h3{
     font-family: "Tourney";
     font-size: 4rem;
-    font-weight: 200;
+    font-weight: 100;
     padding-block-start: 9rem;
+    padding-block-end: 2rem;
     text-align: center;
 }
 
-h2, h3 {
+h1 {
+    font-size: 4rem;
+    padding-block-start: 9rem;
+    padding-block-end: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
+    padding-block-start: 4.5rem;
+    padding-block-end: 1rem;
+}
+
+h2 {
     font-family: "Aldrich";
     line-height: normal;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: -0.02rem;
-}
-
-h2{
-    width: 50rem;
+    inline-size: 50rem;
     background-color: #F5F0F5;
     color: #3C009D;
     padding: 2rem;
     text-align: center;
     position: sticky;
+    z-index: 1;
     border-radius: 0 3rem;
-    border: 1px solid #C871F3;
+    border: 0.05rem solid #C871F3;
 }
 
-h4{
-    font-family: "Be Vietnam Pro";
-    font-size: 0.9rem;
-    font-weight: 300;
-    color: #C871F3;
-    text-transform: uppercase;
-    text-align: start;
-    display: block;
-    margin-block-end: 0.3rem;
-}
 
 p{
     font-size: 1rem;
-    width: 40rem;
+    inline-size: 40rem;
+    padding-block-start: 2rem;
 }
 
 /*Table*/
 
 table{
-    max-width: 80rem;
-    border-spacing: 1rem 0;
+    max-inline-size: 80rem;
     vertical-align: top;
+    border-spacing: 1rem 0;
+    border-block-start: 0.05rem solid #F5F0F5;
+    padding-block-start: 2rem;
 }
 
 /*
 .about-author{
-    width: 65%;
+    inline-size: 65%;
     padding: 1rem;
 }
 
 .meta {
-    width: 35%;
+    inline-size: 35%;
     padding: 1rem;
 }
 */
 
+th{
+    padding-block-start: 2rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #C871F3;
+    text-transform: uppercase;
+    margin-block-end: 0.3rem;
+}
+
 td{
+    padding-block-start: 0.5rem;
     vertical-align: top;
     color: #F5F0F5;
     text-align: left;
@@ -105,14 +123,13 @@ td{
 
 
 blockquote{
-    width: 37.5rem;
+    inline-size: 37.5rem;
     border-inline-start: 0.3rem solid #C871F3;
-    margin: 1.5rem 0;
+    margin-block-start: 2rem;
     padding-inline-start: 2rem;
     font-size: 1.2rem;
     color: #3C009D;
     font-weight: 500;
-    line-height: 150%;
 }
 
 article{
@@ -121,6 +138,7 @@ article{
 
 .purple-text{
     color:#C871F3;
+    font-style: italic  ;
 }
 
 /*Class*/
