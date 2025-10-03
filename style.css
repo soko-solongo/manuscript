@@ -140,7 +140,7 @@ article{
     padding-block-end: 4rem;
 }
 
-span.header{
+.header{
     color:#C871F3;
     font-family: "Tourney";
     font-style: italic;
@@ -211,7 +211,7 @@ span.header{
     margin-inline-start: 2rem;
 }
 
-span.word{
+.word{
     padding-block: 0.1rem;
     text-align: center;
     margin-inline: center;
@@ -219,3 +219,15 @@ span.word{
     border-radius: 0.5rem 0rem;
     padding-inline: 0.4rem;
 }
+
+.blur{
+    filter: blur(0.14rem);
+    font-size: 4.25rem;
+    color:#230430;
+    opacity: 20%;
+    font-weight: 800;
+    position: absolute;
+    padding-block-end: 4rem;
+
+}
+
