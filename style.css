@@ -27,7 +27,6 @@ body{
     line-height: 2rem;
     color: #2F2F2F;
     background: #F5F0F5;
-    /*text-align: justify;*/
 }
 
 /*Headings and Paragraph*/
@@ -38,6 +37,7 @@ h1, h2{
     font-weight: 100;
     padding-block-start: 6rem;
     padding-block-end: 2rem;
+    text-align: center;
 }
 
 h1 {
@@ -94,9 +94,13 @@ p{
 /*Table*/
 
 table{
-    inline-size: 80rem;
+    max-inline-size: 80rem;
+    inline-size: 100%;
     vertical-align: top;
     border-block-start: 0.05rem solid #F5F0F5;
+    border-collapse: collapse;
+    table-layout:fixed;
+    margin-inline: auto;
 }
 
 th{
@@ -116,7 +120,6 @@ td{
     font-size: 0.9rem;
     font-weight: 300;
     line-height: 150%;
-    max-inline-size: 50ch;
     padding-block-end: 2rem;
 }
 
@@ -137,7 +140,7 @@ article{
     padding-block-end: 4rem;
 }
 
-span.purple-text{
+span.header{
     color:#C871F3;
     font-family: "Tourney";
     font-style: italic;
@@ -147,11 +150,39 @@ span.purple-text{
 
 .author-link{
     color: #C871F3;
-    text-decoration: underline;
 }
 
 .author-link:hover{
     color: #F5F0F5;
+}
+
+/*.reading-link{
+    color:#230430;
+    font-size: 0.9rem;
+    padding-block: 0.5rem;
+    text-align: center;
+    border-radius: 1rem 0rem;
+    margin-inline: center;
+    background: #C871F3;
+    padding-inline: 0.8rem;
+    inline-size: 7rem;
+    font-weight: 500;
+    margin-inline: auto;
+}
+
+.reading-link:hover{
+    color: #F5F0F5;
+}
+*/
+
+.about-author{
+    inline-size: 29rem;
+    white-space: normal;
+    text-align: justify;
+}
+
+.year{
+    text-align: end;
 }
 
 .my-response{
@@ -159,9 +190,9 @@ span.purple-text{
 }
 
 .columns{
-    max-inline-size: 80rem;
+    max-inline-size: 70rem;
+    padding: 3rem;
     margin-inline: auto;
-    padding: 3rem
 }
 
 .col{
@@ -180,52 +211,11 @@ span.purple-text{
     margin-inline-start: 2rem;
 }
 
-/*
-.page-wrapper{
-    max-inline-size: 80rem;
+span.word{
+    padding-block: 0.1rem;
+    text-align: center;
+    margin-inline: center;
+    background: #C871F3;
+    border-radius: 0.5rem 0rem;
+    padding-inline: 0.4rem;
 }
-*/
-
-/* I wanna try something here, but can't figure out
-.type-animation{
-    position: relative;
-    display:inline-block;
-    font-size: 4rem; 
-}
-
-.type-animation span {
-    position: absolute;
-    inset-block-start: 6rem;
-    inset-inline-start: 0;
-    opacity: 0;
-    animation: fadeinout 8s infinite;
-}
-
-.brand{
-    color:#D47CDC;
-}
-
-.font1{
-    font-family: "Playfair Display";
-    animation-delay: 0s;
-}
-
-.font2{
-    font-family: "PoetsenOne";
-    animation-delay: 2s;
-}
-
-.font3{
-    font-family: "Rampart One";
-    animation-delay: 4s;
-}
-
-@keyframes fadeinout {
-    0%, 15% {opacity: 1;}
-    20%, 100% {opacity: 0;}
-}
-
-*/
-
-
-/**:not(:first-child){margin-block-start: 1em;}*/
