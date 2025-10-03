@@ -3,7 +3,8 @@
 It focuses on applying fundamental HTML and CSS skills alongside principles of typography with constraints given in the project.
 </p>
 
-<ul> Key things I have learned:
+<h3>Key things I have learned:</h3>
+<ul>
 <li>Setting up GitHub, Visual Studio Code and Live Preview</li>
 <li>Structuring content with basic HTML elements</li>
 <li>Styling elements with CSS fundamentals</li>
