@@ -10,6 +10,7 @@ It focuses on applying fundamental HTML and CSS skills alongside principles of t
 <li>Applying the box model to control spacing</li>
 <li>Embedding and using fonts from Google Fonts</li>
 <li>Implementing a reset.css file to standardize styles across browsers</li>
+</ul>
 
 <h2>About me</h2>
 <p>I'm Soko, a graduate student at MPS Communication Design at The New School | Parsons School of Design. It was my first time using HTML/CSS to code!!</p>
