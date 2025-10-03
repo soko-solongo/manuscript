@@ -17,12 +17,10 @@ header,
 footer {
     background-color: #230430;
     padding-inline: 3rem;
+    padding-block-start: 6rem;
     color: #F5F0F5;
     line-height: normal;
-}
 
-main {
-    padding-block-start: 4rem;
 }
 
 body {
@@ -41,13 +39,13 @@ h2 {
     font-family: "Aldrich";
     font-size: 4rem;
     font-weight: 100;
-    padding-block-start: 6rem;
-    padding-block-end: 2rem;
+    padding-block: 2rem;
     text-align: center;
 }
 
 h1 {
     font-size: 4rem;
+    padding-block-start: 6rem;
     padding-block-end: 2rem;
 }
 
@@ -94,7 +92,7 @@ h4 {
 p {
     font-size: 1rem;
     max-inline-size: 35rem;
-    padding-block-end: 2rem;
+    padding-block-start: 3rem;
     margin-inline: auto;
 }
 
@@ -135,7 +133,7 @@ td {
 blockquote {
     max-inline-size: 35rem;
     border-inline-start: 0.3rem solid #C871F3;
-    margin-block-end: 2rem;
+    margin-block-start: 3rem;
     padding-inline-start: 2rem;
     font-size: 1.2rem;
     color: #3C009D;
@@ -144,8 +142,7 @@ blockquote {
 }
 
 article {
-    padding-block-start: 8rem;
-    padding-block-end: 4rem;
+    margin-block-start: 4rem;
 }
 
 /*Class*/
