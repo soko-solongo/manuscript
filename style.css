@@ -5,8 +5,12 @@
 
 /*make the header viewport*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
-	font-size: 125%;
+    font-size: 125%;
 }
 
 header, footer {
@@ -14,10 +18,7 @@ header, footer {
     padding: 3rem;
     color: #F5F0F5;
     line-height: normal;
-}
-
-main{
-    padding: 3rem;
+    padding-block: 0rem;
 }
 
 body{
@@ -27,55 +28,65 @@ body{
     line-height: 2rem;
     color: #2F2F2F;
     background: #F5F0F5;
-    text-align: justify;
 }
 
-/*Headings*/
+/*Headings and Paragraph*/
 
-h1, h3{
-    font-family: "Tourney";
+h1, h2{
+    font-family: "Aldrich";
     font-size: 4rem;
     font-weight: 100;
-    padding-block-start: 9rem;
+    padding-block-start: 6rem;
     padding-block-end: 2rem;
-    text-align: center;
 }
 
 h1 {
     font-size: 4rem;
-    padding-block-start: 9rem;
     padding-block-end: 2rem;
 }
 
-h3 {
+h2 {
     font-size: 2rem;
     padding-block-start: 4.5rem;
     padding-block-end: 1rem;
 }
 
-h2 {
+h3, h4{
     font-family: "Aldrich";
-    line-height: normal;
-    font-size: 2rem;
+    line-height: 1.8rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: -0.02rem;
-    inline-size: 50rem;
-    background-color: #F5F0F5;
-    color: #3C009D;
-    padding: 1.2rem;
-    text-align: center;
+
+    display: inline-block;
+    max-inline-size: 34rem;
+    padding-block: 1rem;
+    padding-inline: 1.2rem;
+    text-align: start;
     position: sticky;
-    top: 1rem;
-    border-radius: 0 3rem;
+    top: 2rem;
+    border-radius: 1.5rem 0rem;
+    margin-inline: center;
+}
+
+h3{
+    color: #3C009D;
     border: 0.05rem solid #C871F3;
-    margin-inline: auto;
+    inline-size: auto;
+    background: #F5F0F5;
+}
+
+h4{
+    color: #F5F0F5;
+    background: #230430;
+
 }
 
 
 p{
     font-size: 1rem;
-    inline-size: 40rem;
-    padding-block-start: 2rem;
+    max-inline-size: 35rem;
+    padding-block-end: 2rem;
     margin-inline: auto;
 }
 
@@ -84,22 +95,8 @@ p{
 table{
     max-inline-size: 80rem;
     vertical-align: top;
-    border-spacing: 1rem 0;
     border-block-start: 0.05rem solid #F5F0F5;
-    padding-block-start: 2rem;
 }
-
-/*
-.about-author{
-    inline-size: 65%;
-    padding: 1rem;
-}
-
-.meta {
-    inline-size: 35%;
-    padding: 1rem;
-}
-*/
 
 th{
     padding-block-start: 2rem;
@@ -115,33 +112,32 @@ td{
     vertical-align: top;
     color: #F5F0F5;
     text-align: left;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 300;
     line-height: 150%;
 }
 
 
-
-
-
 blockquote{
-    inline-size: 37.5rem;
+    max-inline-size: 35rem;
     border-inline-start: 0.3rem solid #C871F3;
-    margin-block-start: 2rem;
+    margin-block-end: 2rem;
     padding-inline-start: 2rem;
     font-size: 1.2rem;
     color: #3C009D;
     font-weight: 500;
-     margin-inline: auto;
+    margin-inline: auto;
 }
 
 article{
-    padding-block-start: 6rem;
+    padding-block-start: 8rem;
+    padding-block-end: 4rem;
 }
 
-.purple-text{
+span.purple-text{
     color:#C871F3;
-    font-style: italic  ;
+    font-family: "Tourney";
+    font-style: italic;
 }
 
 /*Class*/
@@ -153,6 +149,32 @@ article{
 
 .author-link:hover{
     color: #F5F0F5;
+}
+
+.my-response{
+    background: #E1D8E6;
+}
+
+.two-columns{
+    max-inline-size: 80rem;
+    margin-inline: auto;
+    padding: 3rem
+}
+
+.col{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.title{
+    inline-size: 40%;
+    position: sticky;
+    top: 2rem;
+}
+
+.text{
+    inline-size: 55%;
+    margin-inline-start: 2rem;
 }
 
 /*
