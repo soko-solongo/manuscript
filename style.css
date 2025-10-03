@@ -15,10 +15,9 @@ html {
 
 header, footer {
     background-color: #230430;
-    padding: 3rem;
+    padding-inline: 3rem;
     color: #F5F0F5;
     line-height: normal;
-    padding-block: 0rem;
 }
 
 body{
@@ -28,6 +27,7 @@ body{
     line-height: 2rem;
     color: #2F2F2F;
     background: #F5F0F5;
+    /*text-align: justify;*/
 }
 
 /*Headings and Paragraph*/
@@ -61,7 +61,6 @@ h3, h4{
     display: inline-block;
     max-inline-size: 34rem;
     padding-block: 1rem;
-    padding-inline: 1.2rem;
     text-align: start;
     position: sticky;
     top: 2rem;
@@ -74,11 +73,13 @@ h3{
     border: 0.05rem solid #C871F3;
     inline-size: auto;
     background: #F5F0F5;
+    padding-inline: 1.2rem;
 }
 
 h4{
     color: #F5F0F5;
     background: #230430;
+    padding-inline: 1.2rem;
 
 }
 
@@ -93,7 +94,7 @@ p{
 /*Table*/
 
 table{
-    max-inline-size: 80rem;
+    inline-size: 80rem;
     vertical-align: top;
     border-block-start: 0.05rem solid #F5F0F5;
 }
@@ -115,6 +116,8 @@ td{
     font-size: 0.9rem;
     font-weight: 300;
     line-height: 150%;
+    max-inline-size: 50ch;
+    padding-block-end: 2rem;
 }
 
 
@@ -155,7 +158,7 @@ span.purple-text{
     background: #E1D8E6;
 }
 
-.two-columns{
+.columns{
     max-inline-size: 80rem;
     margin-inline: auto;
     padding: 3rem
