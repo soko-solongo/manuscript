@@ -1,4 +1,4 @@
-<h>Project Name: Manuscript</h2>
+<h2>Project Name: Manuscript</h2>
 <p>The project was to design a web page that combines a chosen design reading with our written response in Fall 2025 | Typography and Interaction Design 1.
 It focuses on applying fundamental HTML and CSS skills alongside principles of typography with constraints given in the project.
 </p>
