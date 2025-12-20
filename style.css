@@ -57,6 +57,7 @@ p {
     color: var(--white);
     padding-inline: 4%;
     padding-block-start: calc(1.4*var(--spacing));
+    max-inline-size: 90ch;
 }
 
 header p {
@@ -140,6 +141,7 @@ blockquote::after {
     padding-inline: 8%;
     font-weight: 300;
     line-height: calc(1.5*var(--spacing));
+    max-inline-size: 50ch;
 }
 
 .table {
@@ -188,4 +190,21 @@ a:hover {
     padding-inline: 8%;
     font-weight: 300;
     line-height: calc(1.5*var(--spacing));
+}
+
+@media (width>800px) {
+
+    :root {
+        font-size: 110%;
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    ol,
+    blockquote p {
+        padding-inline: 8%;
+        margin-inline: auto;
+    }
 }
