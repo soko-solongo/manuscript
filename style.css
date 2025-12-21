@@ -41,7 +41,7 @@ h1 {
 h2 {
     font-family: var(--h1-font);
     font-size: calc(1.6*var(--spacing));
-    padding-block-start: calc(4*var(--spacing));
+    padding-block-start: calc(6*var(--spacing));
     padding-inline: 4%;
 }
 
@@ -240,20 +240,33 @@ a:hover {
         font-size: 110%;
     }
 
-    /* h1,
-    h2,
-    h3,
-    p,
-    blockquote p {
-        margin-inline: auto;
-        max-inline-size: 80ch;
-    } */
-
     blockquote {
         margin-inline: auto;
     }
 
     h1 {
         font-size: calc(3.5*var(--spacing));
+    }
+}
+
+@media (width>1100px) {
+
+    :root {
+        font-size: 110%;
+    }
+
+    h1 {
+        font-size: calc(4.5*var(--spacing));
+    }
+
+    blockquote p{
+        margin-inline: initial;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+        margin-inline: 20%;
     }
 }
