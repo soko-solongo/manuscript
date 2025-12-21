@@ -57,7 +57,7 @@ p {
     color: var(--white);
     padding-inline: 4%;
     padding-block-start: calc(1.4*var(--spacing));
-    max-inline-size: 90ch;
+    max-inline-size: 80ch;
 }
 
 header p {
@@ -124,7 +124,7 @@ blockquote::after {
     display: block;
     block-size: calc(8*var(--spacing));
     background: linear-gradient(var(--dark-yellow) 5%, var(--black));
-    border-block-start: 0.01em solid var(--white) ;
+    border-block-start: 0.01em solid var(--white);
 }
     
 .highlight {
@@ -142,6 +142,7 @@ blockquote::after {
     font-weight: 300;
     line-height: calc(1.5*var(--spacing));
     max-inline-size: 50ch;
+    margin-inline: auto;
 }
 
 .table {
@@ -179,6 +180,7 @@ a:hover {
     color: var(--turquose);
     filter: blur(0.04em);
     text-align: center;
+    line-height: calc(2*var(--spacing));
 }
 
 #adapt-move {
@@ -186,10 +188,19 @@ a:hover {
     font-size: calc(1*var(--spacing));
     color: var(--yellow);
     text-align: center;
-    /* padding-block: calc(4*var(--spacing)); */
-    padding-inline: 8%;
     font-weight: 300;
     line-height: calc(1.5*var(--spacing));
+    padding-block: var(--spacing);
+}
+
+.last-words {
+    padding-block: calc(4*var(--spacing));
+    /* padding-inline: 4%; */
+}
+
+#my-response {
+    z-index: 6;
+    
 }
 
 @media (width>800px) {
@@ -198,18 +209,13 @@ a:hover {
         font-size: 110%;
     }
 
-    /* h1,
+    h1,
     h2,
     h3,
     p,
     ol,
     blockquote p {
         padding-inline: 8%;
-        margin-inline: auto;
-    } */
-
-    section {
-        padding-inline: 20%;
         margin-inline: auto;
     }
 
