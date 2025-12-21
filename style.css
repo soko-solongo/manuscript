@@ -38,6 +38,22 @@ h1 {
     padding-inline: 4%;
 }
 
+.sticky h1 {
+	font-size: calc(1.2*var(--spacing));
+    padding-block: initial;
+    color: var(--red);
+}
+
+.sticky {
+	position: sticky;
+	inset-block-start: 0;
+	margin-block-start: calc(-2.5*var(--spacing));
+	background: var(--black);
+	padding-block: calc(0.3*var(--spacing));
+	z-index: 1; 
+    border-block: 0.01em solid var(--white);
+}
+
 h2 {
     font-family: var(--h1-font);
     font-size: calc(1.6*var(--spacing));
@@ -168,6 +184,9 @@ blockquote::after {
     padding-block: calc(2*var(--spacing));
     border-block: 0.01em solid var(--white);
     padding-inline: 4%;
+    position: relative;
+    z-index: 2;
+    background: var(--black);
 }
 
 .table p {
@@ -223,16 +242,13 @@ a:hover {
     /* padding-inline: 4%; */
 }
 
-#my-response {
-    z-index: 6;
-    
+.main-text {
+
 }
 
-/* .info {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-} */
+.my-response {
+
+}
 
 @media (width>800px) {
 
