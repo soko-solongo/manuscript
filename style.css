@@ -27,20 +27,22 @@ h2,
 h3 {
     color: var(--red);
     text-transform: uppercase;
-    padding-inline: 4%;
     max-inline-size: 80ch;
+    margin-inline: auto;
 }
 
 h1 {
     font-family: var(--h1-font);
     font-size: calc(2.3*var(--spacing));
     padding-block: calc(2*var(--spacing));
+    padding-inline: 4%;
 }
 
 h2 {
     font-family: var(--h1-font);
     font-size: calc(1.6*var(--spacing));
     padding-block-start: calc(4*var(--spacing));
+    padding-inline: 4%;
 }
 
 h3 {
@@ -48,6 +50,7 @@ h3 {
     font-size: calc(0.8*var(--spacing));
     padding-block-end: calc(0.3*var(--spacing));
     font-weight: 200;
+    margin-inline: initial;
 }
 
 p {
@@ -64,6 +67,10 @@ p {
 header p,
 footer p {
     padding-block: initial;
+}
+
+footer {
+    margin-block-start: calc(6*var(--spacing));
 }
 
 blockquote {
@@ -91,6 +98,7 @@ blockquote footer {
     font-size: calc(0.7*var(--spacing));
     padding-inline: calc(1.5*var(--spacing));
     padding-block-end: calc(1.5*var(--spacing));
+     margin-block-start: initial;
 }
 
 blockquote::before,
@@ -115,11 +123,16 @@ blockquote::after {
     right: -0.1em;
 }
 
+#custom-spacing {
+    margin-block-end: calc(12*var(--spacing));
+}
+
 
 .gradience-red {
     display: block;
     block-size: calc(8*var(--spacing));
     background: linear-gradient(var(--dark-red) 5%, var(--black));
+    border-block-start: 0.01em solid var(--white);
 }
 
 .gradience-yellow {
@@ -153,14 +166,19 @@ blockquote::after {
     flex-wrap: wrap;
     gap: calc(2*var(--spacing));
     padding-block: calc(2*var(--spacing));
-    border-block: 0.01em solid var(--white) 
+    border-block: 0.01em solid var(--white);
+    padding-inline: 4%;
+}
+
+.table p {
+    padding-inline: initial;
 }
 
 ol {
     display: flex;
     flex-direction: row;
     gap: calc(1.2*var(--spacing));
-    padding-inline: 4%;
+    /* padding-inline: 4%; */
 }
 
 li {
@@ -222,14 +240,14 @@ a:hover {
         font-size: 110%;
     }
 
-    h1,
+    /* h1,
     h2,
     h3,
     p,
     blockquote p {
         margin-inline: auto;
         max-inline-size: 80ch;
-    }
+    } */
 
     blockquote {
         margin-inline: auto;
