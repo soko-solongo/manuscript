@@ -28,6 +28,7 @@ h3 {
     color: var(--red);
     text-transform: uppercase;
     padding-inline: 4%;
+    max-inline-size: 80ch;
 }
 
 h1 {
@@ -60,7 +61,8 @@ p {
     max-inline-size: 80ch;
 }
 
-header p {
+header p,
+footer p {
     padding-block: initial;
 }
 
@@ -147,7 +149,8 @@ blockquote::after {
 
 .table {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: calc(2*var(--spacing));
     padding-block: calc(2*var(--spacing));
     border-block: 0.01em solid var(--white) 
@@ -158,6 +161,10 @@ ol {
     flex-direction: row;
     gap: calc(1.2*var(--spacing));
     padding-inline: 4%;
+}
+
+li {
+    padding: initial;
 }
 
 a {
@@ -203,6 +210,12 @@ a:hover {
     
 }
 
+/* .info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} */
+
 @media (width>800px) {
 
     :root {
@@ -213,13 +226,16 @@ a:hover {
     h2,
     h3,
     p,
-    ol,
     blockquote p {
-        padding-inline: 8%;
+        margin-inline: auto;
+        max-inline-size: 80ch;
+    }
+
+    blockquote {
         margin-inline: auto;
     }
 
-    table {
-        flex-direction: row;
+    h1 {
+        font-size: calc(3.5*var(--spacing));
     }
 }
