@@ -198,7 +198,7 @@ a:hover {
         font-size: 110%;
     }
 
-    h1,
+    /* h1,
     h2,
     h3,
     p,
@@ -206,5 +206,14 @@ a:hover {
     blockquote p {
         padding-inline: 8%;
         margin-inline: auto;
+    } */
+
+    section {
+        padding-inline: 20%;
+        margin-inline: auto;
+    }
+
+    table {
+        flex-direction: row;
     }
 }
